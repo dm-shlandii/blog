@@ -1,0 +1,88 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+defaultContentLanguage = "en"
+title = 'Dmytro Shlandii'
+theme = 'anubis2'
+
+
+[pagination]
+pagerSize = 5
+
+[params.author]
+name = "dm"
+email  = "me@shlandii.dev"
+location = "Spain"
+
+
+[params]
+description = "Anubis2 is another simple minimalist theme for Hugo blog engine."
+dateFormat = "2006-01-02"
+paginationSinglePost = true
+
+readNextPosts = 2
+
+rssAsSocialIcon = true
+locale = "en-us"
+toc = true
+
+
+[params.anubis2]
+    enableMathGlobally = true # MathJax (default is false)
+    enableCopyCodeButton = true
+    enableReadMoreButton = true
+    hideFooterAttribution = true # hide "Powered by Hugo, theme" in footer
+    colorTheme = "auto"
+    enableColorThemeSwitcher = true
+
+
+
+    social = [
+        { id = "linkedin", url = "https://www.linkedin.com/" },
+        { id = "email", url = "me@shlandii.dev" },
+    ]
+
+
+
+[[menu.main]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 2
+
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 3
+
+[[menu.main]]
+name = "Archive"
+identifier = "archive"
+url = "/posts/"
+weight = 4
+
+
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+author = "authors"
+
+[markup]
+defaultMarkdownHandler = 'goldmark'
+
+[markup.goldmark.renderer]
+unsafe = true # Enable unsafe mode to have a better experience
+
+[markup.highlight]
+anchorLineNos      = false
+codeFences         = true # tested with true and false. Both work.
+noClasses          = true # If you run with markup.highlight.noClasses=false in your site configuration, you need a style sheet.
+style              = 'catppuccin-frappe' # Find more style at here: https://swapoff.org/chroma/playground/
+tabWidth           = 4
