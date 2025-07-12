@@ -19,7 +19,7 @@ location = "Spain"
 
 
 [params]
-description = "Anubis2 is another simple minimalist theme for Hugo blog engine."
+description = "Personal blog. Dmytro Shlandii"
 dateFormat = "2006-01-02"
 paginationSinglePost = true
 
@@ -41,8 +41,8 @@ toc = true
 
 
     social = [
-        { id = "linkedin", url = "https://www.linkedin.com/" },
-        { id = "email", url = "me@shlandii.dev" },
+        { id = "linkedin", url = "www.linkedin.com/in/dmytro-shlandii" },
+        { id = "email", url = "---" },
     ]
 
 
