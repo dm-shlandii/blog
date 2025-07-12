@@ -1,9 +1,13 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://dm-shlandii.github.io'
 languageCode = 'en-us'
 defaultContentLanguage = "en"
 title = 'Dmytro Shlandii'
 theme = 'anubis2'
 
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
 
 [pagination]
 pagerSize = 5
